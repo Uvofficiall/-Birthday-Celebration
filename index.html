@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Birthday • Miss Isha</title>
+    <meta name="description" content="Professional birthday celebration for Miss Isha" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#ff6b6b',
+              secondary: '#4ecdc4',
+              accent: '#ffe66d'
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gradient-to-br from-rose-400 via-orange-300 to-pink-500">
+    <!-- Birthday Splash Screen -->
+    <div id="birthday-splash" class="fixed inset-0 z-[9999] bg-gradient-to-br from-coral-400 via-teal-400 to-yellow-300 flex items-center justify-center">
+      <div class="text-center">
+        <div class="birthday-cake mb-8">
+          <div class="cake-base"></div>
+          <div class="candles">
+            <div class="candle" style="--delay: 0.1s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 0.2s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 0.3s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 0.4s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 0.5s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 0.6s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 0.7s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 0.8s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 0.9s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 1.0s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 1.1s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 1.2s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 1.3s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 1.4s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 1.5s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 1.6s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 1.7s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 1.8s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 1.9s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 2.0s"><div class="flame"></div></div>
+            <div class="candle" style="--delay: 2.1s"><div class="flame"></div></div>
+          </div>
+        </div>
+        <h1 class="text-6xl font-bold text-white mb-4 animate-bounce">Happy 21st Birthday!</h1>
+        <p class="text-2xl text-white/90 mb-8">Miss Isha</p>
+        <button id="enter-site" onclick="document.getElementById('birthday-splash').style.display='none'" class="px-8 py-4 bg-white/20 backdrop-blur-md rounded-full text-white font-semibold hover:bg-white/30 transition-all cursor-pointer">
+          🎉 Enter Celebration
+        </button>
+      </div>
+      <div class="balloons">
+        <div class="balloon balloon-1">🎈</div>
+        <div class="balloon balloon-2">🎈</div>
+        <div class="balloon balloon-3">🎈</div>
+        <div class="balloon balloon-4">🎈</div>
+        <div class="balloon balloon-5">🎈</div>
+        <div class="balloon balloon-6">🎈</div>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator"></div>
+    <canvas id="bg"></canvas>
+    
+    <!-- Sparkle Effects -->
+    <div class="sparkle-effect">
+      <div class="sparkle">✨</div>
+      <div class="sparkle">⭐</div>
+      <div class="sparkle">💫</div>
+      <div class="sparkle">🌟</div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 backdrop-blur-md bg-coral-500/20 border-b border-white/30">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-white drop-shadow-lg">🌸 Isha's Day</div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#hero" class="text-white/90 hover:text-yellow-200 transition-colors font-medium">Home</a>
+          <a href="wishes.html" class="text-white/90 hover:text-yellow-200 transition-colors font-medium">Wishes</a>
+          <a href="#memories" class="text-white/90 hover:text-yellow-200 transition-colors font-medium">Memories</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="text-center lg:text-left">
+            <h1 class="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+              Happy Birthday
+              <span class="block text-gradient">Miss Isha</span>
+            </h1>
+            <p class="text-xl text-white/80 mb-8 max-w-lg">
+              Celebrating another year of your amazing journey. May this special day bring you endless joy and beautiful memories.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a href="#wishes" class="btn-primary px-8 py-4 rounded-full text-white font-semibold text-center">
+                🎂 See Wishes
+              </a>
+              <a href="#memories" class="px-8 py-4 rounded-full border-2 border-yellow-300/50 text-white font-semibold hover:bg-yellow-300/20 transition-all text-center">
+                📸 View Memories
+              </a>
+            </div>
+          </div>
+          
+          <div class="flex justify-center">
+            <div class="photo-frame w-80 h-99">
+              <img 
+                src="assets/isha.png" 
+                alt="Miss Isha" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wishes Section -->
+    <section id="wishes" class="py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-white mb-12">
+          🎊 Birthday Wishes 🎊
+        </h2>
+        <div class="max-w-4xl mx-auto">
+          <div class="card-gradient rounded-3xl p-8 text-center">
+            <div class="text-6xl mb-6">🎂</div>
+            <p id="wishes-text" class="text-xl text-white leading-relaxed">
+              Happy Birthday, beautiful soul! ✨ Another year of your incredible journey around the sun! 
+              May this special day bring you boundless joy, laughter, and all the wonderful things you deserve. 
+              Here's to celebrating the amazing person you are! 🎉💖
+              You’re my favorite human! 🎉
+You’re not just a friend — you’re family. From late-night talks to random laughs, every memory with you is gold. Hope your day is as amazing as your vibe. Wishing you endless happiness, success, and crazy adventures ahead! ❤️✨
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memories Section -->
+    <section id="memories" class="py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-white mb-12">
+          📸 Beautiful Moments 📸
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
+          <div class="memory-item"><img src="assets/memory1.jpg" alt="Memory 1" class="w-full h-full object-cover rounded-lg" /></div>
+          <div class="memory-item"><img src="assets/memory2.jpg" alt="Memory 2" class="w-full h-full object-cover rounded-lg" /></div>
+          <div class="memory-item"><img src="assets/memory3.jpg" alt="Memory 3" class="w-full h-full object-cover rounded-lg" /></div>
+          <div class="memory-item"><img src="assets/memory4.jpg" alt="Memory 4" class="w-full h-full object-cover rounded-lg" /></div>
+          <div class="memory-item"><img src="assets/memory5.jpg" alt="Memory 5" class="w-full h-full object-cover rounded-lg" /></div>
+          <div class="memory-item"><img src="assets/memory6.jpg" alt="Memory 6" class="w-full h-full object-cover rounded-lg" /></div>
+          <div class="memory-item"><img src="assets/memory7.jpg" alt="Memory 7" class="w-full h-full object-cover rounded-lg" /></div>
+          <div class="memory-item"><img src="assets/memory8.jpg" alt="Memory 8" class="w-full h-full object-cover rounded-lg" /></div>
+          <div class="memory-item"><img src="assets/memory9.jpg" alt="Memory 9" class="w-full h-full object-cover rounded-lg" /></div>
+          <div class="memory-item"><img src="assets/memory10.jpg" alt="Memory 10" class="w-full h-full object-cover rounded-lg" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-coral-600/30 to-teal-600/30 backdrop-blur-md border-t border-white/20 py-8 mt-20">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="text-center md:text-left mb-4 md:mb-0">
+            <h3 class="text-2xl font-bold text-white mb-2">🎉 Isha's Special Day</h3>
+            <p class="text-white/60">A celebration of joy, love, and beautiful memories</p>
+          </div>
+          <div class="text-center md:text-right">
+            <p class="text-white/80 font-medium">Crafted with ❤️ by YUVRAJ SHARMA</p>
+            <p class="text-white/50 text-sm mt-1">Contact: 230101120260@centurionuniv.edu.in</p>
+            <div class="flex justify-center md:justify-end space-x-4 mt-3">
+              <span class="text-2xl">🎂</span>
+              <span class="text-2xl">🎈</span>
+              <span class="text-2xl">✨</span>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-white/10 mt-6 pt-4 text-center">
+          <p class="text-white/40 text-sm">© 2024 Birthday Celebration • Made for Miss Isha</p>
+        </div>
+      </div>
+    </footer>
+
+    <audio id="birthday-music" loop style="position:absolute;left:-9999px;">
+      <source src="https://github.com/Uvofficiall/error1/raw/main/song%201.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script>
+      let musicStarted = false;
+      function playMusic() {
+        if (!musicStarted) {
+          const audio = document.getElementById('birthday-music');
+          audio.volume = 0.3;
+          audio.play().catch(() => {});
+          musicStarted = true;
+        }
+      }
+      document.addEventListener('click', playMusic);
+      document.addEventListener('keydown', playMusic);
+      document.addEventListener('touchstart', playMusic);
+    </script>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

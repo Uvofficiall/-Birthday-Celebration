@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Birthday Wishes • Miss Isha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gradient-to-br from-pink-500 via-purple-600 to-blue-600 min-h-screen">
+    <canvas id="bg"></canvas>
+    
+    <header class="fixed top-0 w-full z-50 backdrop-blur-md bg-white/10 border-b border-white/20">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-white">🎂 Birthday Wishes</div>
+        <a href="index.html" class="text-white/80 hover:text-white transition-colors">← Back to Home</a>
+      </nav>
+    </header>
+
+    <main class="pt-24 pb-12">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h1 class="text-6xl font-bold text-white mb-6">🎊 Special Wishes 🎊</h1>
+          <p class="text-2xl text-white/80">For the amazing Miss Isha</p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          <div class="card-gradient rounded-3xl p-8 text-center mb-8">
+            <div class="text-8xl mb-6">🎂</div>
+            <p id="wishes-text" class="text-2xl text-white leading-relaxed">
+              <span class="typing-cursor">|</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+      // Auto-start typing animation on page load
+      window.addEventListener('load', () => {
+        setTimeout(startTypingAnimation, 1000);
+      });
+    </script>
+  </body>
+</html>
