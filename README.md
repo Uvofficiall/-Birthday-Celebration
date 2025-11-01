@@ -1,4 +1,4 @@
-# 🎉 Miss Isha's Birthday Celebration
+# 🎉 Birthday Celebration
 
 A beautiful, professional birthday website created for Miss Isha with modern animations and interactive elements.
 
@@ -29,4 +29,4 @@ Contact: 230101120260@centurionuniv.edu.in
 
 ---
 
-Made with ❤️ for Miss Isha's special day!
+Made with ❤️ for special day!
